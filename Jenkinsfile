@@ -4,6 +4,8 @@ ReactBuildEcsDeploy([
      containerRegistoryUrl: '919678485989.dkr.ecr.ap-south-1.amazonaws.com',
      clusterName: 'jen-cluster',
      nodeVersion: '16.20.0',
+     serviceName: 'demo-svc1',
+     taskDefinition: 'demo-task1',
      notification: [
       [
         type: 'email',
