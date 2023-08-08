@@ -1,8 +1,12 @@
 @Library('git-shared-lib') _
 ReactBuildEcsDeploy([ 
- appName: 'my-app',
+ appName: 'react-img',
  dockerFilePath: 'docker/Dockerfile',
  master: [
+     scriptToRun: '''
+       whoami
+       ls -la
+       ''',
      containerRegistoryUrl: '919678485989.dkr.ecr.ap-south-1.amazonaws.com',
      clusterName: 'jen-cluster',
      nodeVersion: '16.20.0',
