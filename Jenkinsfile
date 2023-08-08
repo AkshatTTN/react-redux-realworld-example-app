@@ -1,6 +1,6 @@
 @Library('git-shared-lib') _
 ReactBuildEcsDeploy([ 
- appName: 'react-img',
+ ecrRepoName: 'react-img',
  dockerFilePath: 'Dockerfile',
  master: [
      scriptToRun: '''
